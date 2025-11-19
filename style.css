@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+.quiz-box {
+    background: #1a1a1a;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+    width: 500px;
+    max-width: 100%;
+}
+
+#question-number {
+    color: #0f0;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+#question-text {
+    color: white;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.options label {
+    display: block;
+    background: #333;
+    color: white;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: left;
+}
+
+.options label:hover {
+    background: #444;
+    transform: translateY(-3px);
+}
+
+.options label.correct {
+    background: #4CAF50 !important; /* Green for correct */
+    color: white;
+}
+
+.options label.wrong {
+    background: #f44336 !important; /* Red for wrong */
+    color: white;
+}
+
+.options label.correct:hover, .options label.wrong:hover {
+    transform: none;
+}
+
+.options input {
+    margin-right: 10px;
+}
+
+#next-btn, #restart-btn {
+    margin-top: 30px;
+    padding: 15px 40px;
+    font-size: 1.3rem;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#next-btn:hover, #restart-btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#result h2 {
+    color: #0f0;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#score-text {
+    color: white;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.footer {
+    margin-top: 30px;
+    color: rgba(255,255,255,0.7);
+    font-size: 0.9rem;
+}

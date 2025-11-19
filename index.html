@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- jQuery from Google CDN (works without internet too if saved locally) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Basic Coding Quiz!</h1>
+
+        <div class="quiz-box">
+            <div id="question-container">
+                <h2 id="question-number">Question 1 of 10</h2>
+                <h3 id="question-text"></h3>
+
+                <div class="options">
+                    <label><input type="radio" name="answer" value="0"> <span id="option1"></span></label>
+                    <label><input type="radio" name="answer" value="1"> <span id="option2"></span></label>
+                    <label><input type="radio" name="answer" value="2"> <span id="option3"></span></label>
+                    <label><input type="radio" name="answer" value="3"> <span id="option4"></span></label>
+                </div>
+
+                <button id="next-btn">Next →</button>
+            </div>
+
+            <div id="result" class="hidden">
+                <h2>Quiz Complete! 🎉</h2>
+                <p id="score-text"></p>
+                <button id="restart-btn">Try Again</button>
+            </div>
+        </div>
+
+        <p class="footer">Made with ❤️ for college students learning to code</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
